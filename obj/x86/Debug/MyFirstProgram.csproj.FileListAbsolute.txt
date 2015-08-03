@@ -1,5 +1,0 @@
-D:\Project\Курсы\MyFirstProgram\bin\Debug\MyFirstProgram.exe
-D:\Project\Курсы\MyFirstProgram\bin\Debug\MyFirstProgram.pdb
-D:\Project\Курсы\MyFirstProgram\obj\x86\Debug\MyFirstProgram.csprojResolveAssemblyReference.cache
-D:\Project\Курсы\MyFirstProgram\obj\x86\Debug\MyFirstProgram.exe
-D:\Project\Курсы\MyFirstProgram\obj\x86\Debug\MyFirstProgram.pdb
