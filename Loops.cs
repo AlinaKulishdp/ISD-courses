@@ -237,9 +237,9 @@ namespace MyFirstProgram
 
         public static void Triangle ()
         {
-            int side1 = Helpers.GetNumber("Введите длину петвой стророны треугольника");
-            int side2 = Helpers.GetNumber("Введите длину второй стророны треугольника");
-            int side3 = Helpers.GetNumber("Введите длину третьей стророны треугольника");
+            int side1 = Helpers.GetNumber("Введите длину пеpвой стороны треугольника");
+            int side2 = Helpers.GetNumber("Введите длину второй стороны треугольника");
+            int side3 = Helpers.GetNumber("Введите длину третьей стороны треугольника");
             if ((side1 == Math.Sqrt(Math.Pow(side2, 2) + Math.Pow(side3, 2)))|| (side2 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side3, 2))) || (side3 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2))))
             {
                 Console.WriteLine("Данный треугольник является прямоугольным");
