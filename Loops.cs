@@ -263,5 +263,21 @@ namespace MyFirstProgram
                 }                
             }           
         }
+
+        public static void ParseNumber()
+        {
+            int number = Helpers.GetNumber("Введите четырехзначное число");
+            int a, b, c, d;
+            a = number / 1000;
+            b = number % 1000 / 100;
+            c = number % 100 / 10;
+            d = number % 10;
+            Console.WriteLine(a);
+            Console.WriteLine(b);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            int sum = a + b + c + d;
+            Console.WriteLine(sum);
+        }
     }
 }

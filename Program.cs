@@ -26,7 +26,8 @@ namespace MyFirstProgram
             //Loops.PriceByTaxi();
             //Loops.GameOfDice();
             //Loops.Triangle();
-            Loops.SquaredNumber();
+            //Loops.SquaredNumber();
+            Loops.ParseNumber();
             Console.ReadLine();
           }
     }
