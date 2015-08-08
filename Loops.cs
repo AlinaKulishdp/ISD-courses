@@ -46,7 +46,7 @@ namespace MyFirstProgram
             }
         }
 
-        public static void AmoebaDivision ()
+        public static void AmoebaDivision()
         {
             int amoebaCounter = 1;
             int time = 0;
@@ -81,7 +81,7 @@ namespace MyFirstProgram
                     }
                 }
             }
-            Console.WriteLine(isPrime?"Число является простым":"Число не является простым");
+            Console.WriteLine(isPrime ? "Число является простым" : "Число не является простым");
         }
 
         public static void RabbitsAndGeese()
@@ -119,9 +119,9 @@ namespace MyFirstProgram
             {
                 if (Helpers.IsPrime(i))
                 {
-                    Console.WriteLine(i);                    
+                    Console.WriteLine(i);
                 }
-                
+
             }
         }
 
@@ -130,18 +130,18 @@ namespace MyFirstProgram
             int counter = 0;
             for (int i = 0; i < 4; i++)
             {
-                if (Helpers.GetNumber("Введите число")%2==0)
+                if (Helpers.GetNumber("Введите число") % 2 == 0)
                 {
-                    counter++;                   
-                }                
+                    counter++;
+                }
             }
-            Console.WriteLine(counter>=2?"Два или более из введенных чисел являются четными":"В введенных числах нет двух четных");
+            Console.WriteLine(counter >= 2 ? "Два или более из введенных чисел являются четными" : "В введенных числах нет двух четных");
         }
 
         public static void LeapYear()
         {
             int userYear = Helpers.GetNumber("Введите год");
-            if ((userYear%4==0 && userYear%100!=0)||userYear%400==0)
+            if ((userYear % 4 == 0 && userYear % 100 != 0) || userYear % 400 == 0)
             {
                 Console.WriteLine("Введенный год является високосным");
             }
@@ -166,7 +166,7 @@ namespace MyFirstProgram
                     Console.WriteLine("Четверг");
                     break;
                 case 5:
-                    Console.WriteLine("Пятница");                   
+                    Console.WriteLine("Пятница");
                     break;
                 case 6:
                     Console.WriteLine("Суббота");
@@ -188,7 +188,7 @@ namespace MyFirstProgram
             const int baseTimePrise = 1;
             const int baseKmPrise = 3;
             int totalSum = 0;
-            if (distance<=5)
+            if (distance <= 5)
             {
                 totalSum = basePrise;
             }
@@ -196,14 +196,14 @@ namespace MyFirstProgram
             {
                 totalSum = basePrise + ((distance - 5) * baseKmPrise);
             }
-            if (time!=0)
+            if (time != 0)
             {
                 totalSum += time * baseTimePrise;
             }
             Console.WriteLine(totalSum);
         }
 
-        public static void GameOfDice ()
+        public static void GameOfDice()
         {
             int rate = Helpers.GetNumber("Введите ставку. Ставка должна быть целым числом");
             int prize = 0;
@@ -212,19 +212,19 @@ namespace MyFirstProgram
             int secondNumber = rand.Next(1, 13);
             Console.WriteLine(firstNumber);
             Console.WriteLine(secondNumber);
-            if (firstNumber%3==0 && secondNumber%5==0)
+            if (firstNumber % 3 == 0 && secondNumber % 5 == 0)
             {
-                prize = 5*rate;
+                prize = 5 * rate;
             }
-            else if (firstNumber%2==0 && secondNumber%2==0)
+            else if (firstNumber % 2 == 0 && secondNumber % 2 == 0)
             {
-                prize = 2*rate;
+                prize = 2 * rate;
             }
-            else if ((firstNumber%2==0 && secondNumber%2==0) && ((firstNumber==12||secondNumber!=12) || (firstNumber!=12||secondNumber==12)))
+            else if ((firstNumber % 2 == 0 && secondNumber % 2 == 0) && ((firstNumber == 12 || secondNumber != 12) || (firstNumber != 12 || secondNumber == 12)))
             {
-                prize=10*rate;
+                prize = 10 * rate;
             }
-            else if (((firstNumber==12||secondNumber==12) && (firstNumber==1||secondNumber==1)) || (firstNumber==6 && secondNumber==6))
+            else if (((firstNumber == 12 || secondNumber == 12) && (firstNumber == 1 || secondNumber == 1)) || (firstNumber == 6 && secondNumber == 6))
             {
                 prize = 50 * rate;
             }
@@ -235,12 +235,12 @@ namespace MyFirstProgram
             Console.WriteLine("Ваш выиграш составил {0}", prize);
         }
 
-        public static void Triangle ()
+        public static void Triangle()
         {
             int side1 = Helpers.GetNumber("Введите длину пеpвой стороны треугольника");
             int side2 = Helpers.GetNumber("Введите длину второй стороны треугольника");
             int side3 = Helpers.GetNumber("Введите длину третьей стороны треугольника");
-            if ((side1 == Math.Sqrt(Math.Pow(side2, 2) + Math.Pow(side3, 2)))|| (side2 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side3, 2))) || (side3 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2))))
+            if ((side1 == Math.Sqrt(Math.Pow(side2, 2) + Math.Pow(side3, 2))) || (side2 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side3, 2))) || (side3 == Math.Sqrt(Math.Pow(side1, 2) + Math.Pow(side2, 2))))
             {
                 Console.WriteLine("Данный треугольник является прямоугольным");
             }
@@ -250,18 +250,18 @@ namespace MyFirstProgram
             }
         }
 
-        public static void SquaredNumber ()
+        public static void SquaredNumber()
         {
             double number = 0;
             int userNumber = Helpers.GetNumber("Введите натуральное число");
             for (double counter = 0; counter < userNumber; counter++)
             {
                 number = Math.Pow(counter, 2);
-                if (number<userNumber)
+                if (number < userNumber)
                 {
                     Console.WriteLine(number);
-                }                
-            }           
+                }
+            }
         }
 
         public static void ParseNumber()

@@ -11,7 +11,7 @@ namespace MyFirstProgram
         {
             //Student.GetGroup();
 
-            //My homework exercises (loops):
+            //----My homework exercises (loops):----
 
             //Loops.CelsiusToFahrenheit();
             //Loops.SwimDistance();
@@ -27,8 +27,27 @@ namespace MyFirstProgram
             //Loops.GameOfDice();
             //Loops.Triangle();
             //Loops.SquaredNumber();
-            Loops.ParseNumber();
+            //Loops.ParseNumber();
+            //Type type = typeof(Loops);
+            //foreach (System.Reflection.MethodInfo method in type.GetMethods())
+            //{
+            //    if (method.IsPublic && method.IsStatic)
+            //    {
+            //        //method.Invoke(null, null);
+            //        method.ToString();
+            //        Console.WriteLine(method);
+            //    }
+            //}
+            //System.Reflection.MethodInfo[] methods = type.GetMethods();
+            //for (int index = 0; index < methods.Length; index++)
+            //{
+            //    Console.WriteLine("[{0}] " + methods[index], index);
+            //}
+            //int methodNumber = Helpers.GetNumber("Введите номер метода, который вы хотите запустить");
+            //methods[methodNumber].Invoke(null, null);
+
+            BitOperations.WriteResults();
             Console.ReadLine();
-          }
+        }
     }
 }
