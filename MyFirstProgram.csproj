@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ArrayTask.cs" />
     <Compile Include="BitOperations.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="Loops.cs" />

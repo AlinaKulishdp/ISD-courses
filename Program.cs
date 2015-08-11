@@ -46,7 +46,9 @@ namespace MyFirstProgram
             //int methodNumber = Helpers.GetNumber("Введите номер метода, который вы хотите запустить");
             //methods[methodNumber].Invoke(null, null);
 
-            BitOperations.WriteResults();
+            //BitOperations.WriteResults();
+            //ArrayTask.AllGroups();
+            ArrayTask.GetStudents(ArrayTask.AllGroups());
             Console.ReadLine();
         }
     }
